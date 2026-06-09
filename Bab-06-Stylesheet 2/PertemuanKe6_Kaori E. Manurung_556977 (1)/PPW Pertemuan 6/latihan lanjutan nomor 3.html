@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nav Bar</title>
+
+<style>
+
+nav {
+  background-color: #e6afc6;
+}
+
+nav ul {
+  display: flex; /* horizontal */
+  gap: 20px;
+  list-style: none;
+  padding: 15px;
+  margin: 0;
+  justify-content: center;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* vertikal */
+    gap: 10px;
+    align-items: center;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+  <ul>
+    <li><a>Home</a></li>
+    <li><a>About</a></li>
+    <li><a>Contact</a></li>
+  </ul>
+</nav>
+
+</body>
+</html>

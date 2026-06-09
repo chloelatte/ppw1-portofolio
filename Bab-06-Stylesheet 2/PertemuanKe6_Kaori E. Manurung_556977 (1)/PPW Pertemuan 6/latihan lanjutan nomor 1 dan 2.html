@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perubahan Warna Background</title>
+
+<style>
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background-color: white; 
+  /* warna desktop */
+  text-align: center;
+}
+
+/* Laptop */
+@media (max-width: 1024px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  body {
+    background-color: lightgray;
+  }
+}
+
+/* 
+   Penjelasan untuk soal nomor 2
+
+/*
+Media query max-width artinya CSS akan aktif jika lebar layar KURANG DARI atau SAMA DENGAN nilai tersebut.
+Contoh max-width: 480px maka berlaku untuk layar ≤ 480px (mobile)
+
+Kenapa warna mobile jadi lightgray dan bukan yang lain?
+
+Karena:
+- layar mobile (misalnya 400px) memenuhi SEMUA kondisi, yaitu ≤ 1024, ≤ 768, ≤ 480. Namun CSS membaca dari atas ke bawah.
+Urutan:
+- lightgreen (1024)
+- lightblue (768)
+- lightgray (480) ← TERAKHIR
+Makanya warna yang dipakai adalah lightgray
+
+Kesimpulannya adalah semakin kecil layar maka semakin bawah rule yang aktif sehingga rule terakhir akan menimpa rule sebelumnya
+*/
+
+</style>
+</head>
+
+<body>
+
+<h2>Responsive Background</h2>
+<p>Resize layar untuk melihat perubahan warna</p>
+
+</body>
+</html>

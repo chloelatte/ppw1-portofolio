@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nav Bar</title>
+
+<style>
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* navbar */
+nav {
+  background: #333;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none; /* menghilangkan bullet */
+  padding: 15px;
+  margin: 0;
+}
+
+nav li {
+  color: white;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; 
+    align-items: center;
+  }
+}
+
+/*
+Penjelasan (untuk soal latihan nomor 4):
+Pada tampilan desktop:
+- nav ul menggunakan display: flex sehingga arah default flex adalah row (horizontal), makanya menu (Home, About, Contact) tampil sejajar ke samping
+
+Pada saat ukuran layar ≤ 768px:
+- media query aktif
+- flex-direction diubah menjadi column sehingga menu berubah menjadi vertikal
+
+Perubahan ini terjadi karena layar mobile lebih kecil sehingga jika tetap horizontal, menu bisa sempit atau tidak nyaman diklik
+*/
+
+</style>
+</head>
+
+<body>
+
+<nav>
+  <ul>
+    <li>Home</li>
+    <li>About</li>
+    <li>Contact</li>
+  </ul>
+</nav>
+
+</body>
+</html>

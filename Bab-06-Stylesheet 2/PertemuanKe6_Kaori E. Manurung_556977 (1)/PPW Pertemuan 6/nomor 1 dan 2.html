@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perubahan Warna Background</title>
+<style>
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  color: #333;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* Laptop */
+@media (max-width: 1024px) {
+  body { 
+    background-color: #a8e06e; 
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  body { 
+    background-color: #9face6;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  body { 
+    background-color: #e9e4f0;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+  body { 
+    background-color: #ffffff;
+  }
+}
+
+/* 2. PENJELASAN:
+   layar kecil memenuhi semua max-width
+   maka urutan dibalik (besar → kecil)
+   agar mobile tidak ketimpa */
+
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Responsive Breakpoint</h1>
+  <p>Resize layar untuk melihat perubahan warna</p>
+</div>
+
+</body>
+</html>

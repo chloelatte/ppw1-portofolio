@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Pendaftaran Les Ruangguru</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    background-color:#CAF0F8;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height:1.6;
+}
+
+.container{
+    width:700px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    border:2px solid #999;
+}
+
+h2{
+    text-align:center;
+    color:#051094;
+    font-family:'Bebas Neue', sans-serif;
+    font-size:40px;
+    letter-spacing:2px;
+    text-shadow:1px 1px 2px gray;
+    white-space:nowrap;
+}
+
+.deskripsi{
+    text-indent:40px;
+    word-spacing:4px;
+    text-align:justify;
+}
+
+.banner{
+    display:block;
+    margin:20px auto;
+    border-radius:6px;
+}
+
+fieldset{
+    border:2px solid #aaa;
+    padding:20px;
+    margin-top:20px;
+    border-radius:8px;
+}
+
+legend{
+    font-weight:bold;
+    font-family:"Times New Roman", Times, serif;
+    font-size:20px;
+    color:#051094;
+}
+
+label{
+    display:block;
+    margin-top:10px;
+}
+
+input, select, textarea{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    box-sizing:border-box;
+}
+
+input[type="checkbox"], input[type="radio"]{
+    width:auto;
+}
+
+button{
+padding:8px 15px;
+margin-right:10px;
+border-radius:5px;
+cursor:pointer;
+font-weight:bold;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+button[type="submit"]{
+background-color:#1D4ED8;
+color:white;
+border:none;
+}
+
+button[type="submit"]:hover{
+background-color:#1E40AF;
+}
+
+button[type="reset"]{
+background-color:white;
+color:#1D4ED8;
+border:1px solid #1D4ED8;
+}
+
+button[type="reset"]:hover{
+background-color:#F1F5F9;
+}
+
+.button-group{
+    text-align:left;
+}
+
+textarea{
+font-family:Arial, Helvetica, sans-serif;
+}
+
+textarea::placeholder{
+font-family:Arial, Helvetica, sans-serif;
+color:gray;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Form Pendaftaran Les Online Ruangguru</h2>
+
+<p class="deskripsi">
+Tingkatkan prestasi belajar Anda bersama Ruangguru! Daftarkan diri Anda sekarang untuk mengikuti program les online yang interaktif, mudah dipahami, dan dipandu oleh pengajar profesional. Dengan materi yang lengkap serta metode belajar yang fleksibel, Ruangguru siap membantu Anda meraih hasil belajar yang lebih baik.
+</p>
+
+<img class="banner" src="https://hybrid.co.id/wp-content/uploads/2018/07/8487863035f9c1a2bf9a4103587911d4_webbanner-bimbel.jpg" width="500">
+
+<form>
+
+<fieldset>
+<legend>Data Siswa</legend>
+
+<label for="nama">Nama Lengkap</label>
+<input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap">
+
+<label for="email">Email</label>
+<input type="email" id="email" name="email" placeholder="contoh@email.com">
+
+<label>Kelas</label>
+
+<select>
+<option>SD</option>
+<option>SMP</option>
+<option>SMA</option>
+</select>
+
+</fieldset>
+
+<fieldset>
+<legend>Pilihan Mata Pelajaran</legend>
+
+<input type="checkbox" name="mapel"> Matematika<br>
+<input type="checkbox" name="mapel"> Bahasa Inggris<br>
+<input type="checkbox" name="mapel"> Fisika<br>
+<input type="checkbox" name="mapel"> Kimia
+
+</fieldset>
+
+<fieldset>
+<legend>Metode Belajar</legend>
+
+<input type="radio" name="metode"> Live Class<br>
+<input type="radio" name="metode"> Video Belajar
+
+</fieldset>
+
+<label for="komentar">Komentar atau Pertanyaan</label>
+<textarea id="komentar" name="komentar" rows="4" placeholder="Ketik komentar atau pertanyaan di sini"></textarea>
+
+<div class="button-group">
+<button type="submit">Daftar</button>
+<button type="reset">Reset</button>
+</div>
+
+</form>
+
+</div>
+
+</body>
+</html>

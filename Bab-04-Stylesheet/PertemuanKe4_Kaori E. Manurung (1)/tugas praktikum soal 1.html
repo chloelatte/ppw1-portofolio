@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Form Preferensi Kue dan Musik</h2>
+
+<form>
+
+<fieldset>
+<legend>Data Pengguna</legend>
+
+<label for="nama">Nama:</label><br>
+<input type="text" id="nama" name="nama"><br><br>
+
+<label for="umur">Umur:</label><br>
+<input type="number" id="umur" name="umur"><br><br>
+
+</fieldset>
+
+<br>
+
+<label for="kue">Pilih Kue Favorit:</label>
+<input list="daftarkue" name="kue">
+
+<datalist id="daftarkue">
+<option value="Cheesecake">
+<option value="Brownies">
+<option value="Cupcake">
+<option value="Tiramisu">
+<option value="Red Velvet">
+</datalist>
+
+<br><br>
+
+<label for="musik">Pilih Jenis Musik Favorit:</label>
+
+<select id="musik" name="musik">
+
+<optgroup label="Pop">
+<option value="kpop">K-Pop</option>
+<option value="jpop">J-Pop</option>
+<option value="westernpop">Western Pop</option>
+</optgroup>
+
+<optgroup label="Lainnya">
+<option value="rock">Rock</option>
+<option value="jazz">Jazz</option>
+<option value="classical">Classical</option>
+</optgroup>
+
+</select>
+
+<br><br>
+
+<label>Total pilihan:</label>
+<output name="hasil">0</output>
+
+</form>
+
+</body>
+</html>
+
+
+
